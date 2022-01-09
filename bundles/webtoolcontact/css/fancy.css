@@ -1,0 +1,23 @@
+.contact-block-configuration.fancy input[type="text"],
+.contact-block-configuration.fancy input[type="email"],
+.contact-block-configuration.fancy .input-phone,
+.contact-block-configuration.fancy .input-file,
+.contact-block-configuration.fancy .custom-checkbox,
+.contact-block-configuration.fancy input[type="submit"],
+.contact-block-configuration.fancy select,
+.contact-block-configuration.fancy textarea {
+    padding: 1em;
+    border: none;
+    border-radius: .3em;
+    color: inherit;
+    font-style: italic;
+    letter-spacing: .1em;
+}
+
+.contact-block-configuration.fancy .custom-checkbox {
+    padding: .9em 0 .2em 1em;
+}
+
+.contact-block-configuration.fancy input[type="submit"] {
+    width: 100%;
+}

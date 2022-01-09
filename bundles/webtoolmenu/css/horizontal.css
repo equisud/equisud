@@ -1,0 +1,122 @@
+.menu.horizontal a, .menu.horizontal a:not(.menu-picture-link) {
+    width: 100%;
+    padding: 1em;
+    display: inline-block;
+    color: inherit;
+    cursor: pointer;
+}
+
+.menu.horizontal a.active {
+    text-decoration: underline;
+}
+
+.menu.horizontal a.not-clickable {
+    text-decoration: none;
+    cursor: default;
+}
+
+.menu.horizontal li {
+    position: relative;
+}
+
+.menu.horizontal ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.menu.horizontal ul.root > li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu.horizontal li > ul.sub-branch {
+    top: 0;
+}
+
+.migration > .menu.horizontal .menu-mobile a:hover {
+    text-decoration: none;
+}
+
+.migration > .menu.horizontal .menu-mobile {
+    background-color: unset !important;
+}
+
+.menu.horizontal label,
+.menu.horizontal input[type="checkbox"] {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .menu.horizontal .menu-mobile ul.root {
+        position: relative;
+        min-width: 100%;
+        z-index: 10;
+    }
+
+    .menu.horizontal .menu-mobile li ul {
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top center;
+        list-style-type: none;
+        position: absolute;
+        width: max-content;
+        min-width: 100%; /* when "width: max-content;" is not supported */
+        z-index:1;
+        transition: visibility 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+        transition-delay: .2s;
+    }
+
+    .menu.horizontal .menu-mobile > a,
+    .menu.horizontal .menu-mobile > a:not(.menu-picture-link),
+    .menu.horizontal .menu-mobile > input ,
+    .menu.horizontal .menu-mobile > label {
+        display: none;
+    }
+
+    .menu.horizontal .menu-mobile li:hover > ul {
+        visibility: visible;
+        opacity: 1;
+        transform: scaleY(1);
+        transition-delay: 0s;
+    }
+}
+
+@media (max-width: 991px){
+    .menu.horizontal label {
+        display: initial;
+    }
+
+    .menu.horizontal a,
+    .menu.horizontal a:not(.menu-picture-link) {
+        width: auto;
+        min-height: 25px;
+        padding: 0 10px;
+    }
+
+    .menu.horizontal ul.root > li {
+        display: block;
+    }
+
+    .menu.horizontal li {
+        width: 100%;
+    }
+
+    .menu.horizontal li ul {
+        position: relative;
+        visibility: visible;
+        display: none;
+        opacity: 1;
+        transform: scaleY(1);
+        transition: initial;
+    }
+
+    .menu.horizontal input[type="checkbox"]:checked + label + ul {
+        display: block;
+    }
+
+    .menu.horizontal .align-center ul.root {
+         text-align: left;
+    }
+}

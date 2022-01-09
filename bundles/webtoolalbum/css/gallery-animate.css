@@ -1,0 +1,9 @@
+.camera_pie {
+    display: none;
+}
+.camera_commands,
+.camera_next,
+.camera_prev {
+    border-radius: 50%;
+    cursor: pointer;
+}

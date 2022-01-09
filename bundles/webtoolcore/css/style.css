@@ -1,0 +1,213 @@
+.main-content{
+    width: 1024px;
+    margin: 0 auto;
+    display: table;
+}
+
+.localfr-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.localfr-link:hover {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a.block-link:hover,
+a.block-link {
+    color: inherit;
+}
+
+article a,
+article a:hover {
+    color: inherit;
+}
+
+.credit-img {
+    padding: 3px;
+    border: solid 1px #a5a5a5;
+    background: rgb(202, 202, 202);
+}
+
+.invert-sepia,
+.legal-notes-container {
+    background-color: rgba(150, 150, 150, 0.7);
+    padding: 15px;
+}
+
+.legal-notes-container {
+    border-radius: 3px;
+    margin: 10px;
+    border: 1px solid #a5a5a5;
+    box-shadow: 2px 2px 10px #999;
+    color: #333;
+}
+
+.legal-notes-container h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.legal-notes-container h2 {
+    margin: 1em 0 .5em 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.legal-notes-container h4 {
+    margin: .5em 0;
+}
+
+.legal-notes-container p {
+    margin-left: 1.3em;
+}
+
+.legal-notes-container a {
+    color: #355;
+}
+
+a.inherit-links,
+a.inherit-links:visited,
+a.inherit-links:hover,
+a.inherit-links:focus,
+a.inherit-links:active{
+    color: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+}
+
+.input-required:after {
+    content: " *";
+    color: red;
+    vertical-align: top;
+}
+
+.footer-personnalise{
+    clear: both;
+    line-height: 20px;
+}
+
+.footer-personnalise h3,
+.footer-personnalise h4 {
+    line-height: 20px;
+}
+
+.article-personnalise p {
+    text-align: justify;
+}
+
+.article-personnalise h2 {
+    margin: 20px 0;
+}
+
+.footer-personnalise h3,
+.article-personnalise h3 {
+    font-size: 1.17em;
+}
+.footer-personnalise h4,
+.article-personnalise h4 {
+    font-size: 1em;
+}
+.footer-personnalise h5,
+.article-personnalise h5 {
+    font-size: 0.83em;
+}
+.footer-personnalise h6,
+.article-personnalise h6 {
+    font-size: 0.67em;
+}
+.footer-personnalise h3,
+.footer-personnalise h4,
+.footer-personnalise h5,
+.footer-personnalise h6,
+.article-personnalise h3,
+.article-personnalise h4,
+.article-personnalise h5,
+.article-personnalise h6 {
+    font-weight: bold;
+    text-align: justify;
+    margin: 5px 0;
+}
+
+/*
+ * In order to avoid having horizontal scrollbars,
+ * caused by large min-width properties set on Webtool 1 sites.
+ */
+@media (max-width: 1000px) {
+    .article-personnalise .full-screen-div {
+        margin-left: -5vw !important;
+    }
+}
+@media (max-width: 5in) {
+    .article-personnalise > div {
+        min-width: 100% !important;
+    }
+}
+
+@media (max-width: 12in) {
+    .titre-personnalise div {
+        float: none !important;
+    }
+    h1.titre-personnalise {
+        margin-top: 0 !important;
+    }
+
+    .article-personnalise .responsive-div {
+        width: 100% !important;
+        min-height: auto !important;
+    }
+
+    .article-personnalise .responsive-div img {
+        margin: 0
+    }
+
+    .article-personnalise table img {
+        width: 100%;
+    }
+
+    .article-personnalise div {
+        float: none !important;
+        display: table;
+    }
+
+    .footer-personnalise {
+        padding-top: 10px;
+    }
+
+    .footer-personnalise .col-md-3 {
+        border-right-style: none !important;
+    }
+
+    .btn-agendize-custom {
+        float: none !important;
+    }
+}
+
+.article-personnalise img {
+    max-width: 100%;
+}
+
+.article-personnalise iframe {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.actuality-full-page > .return-link:hover,
+.actuality-full-page > .return-link {
+    color: inherit;
+}
+.actuality-full-page > .return-link span {
+    margin-right: 5px;
+}
+.actuality-full-page > .return-link {
+    float: right;
+}
+
+.jx-knightlab {
+    display: none !important;
+}

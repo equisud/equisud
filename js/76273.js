@@ -1,0 +1,1 @@
+$(function(){jQuery('#album-block-configuration-134414').camera({portrait:true,thumbnails:true,fx:'random',time:7000,transPeriod:1500});});
